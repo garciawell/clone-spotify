@@ -1,48 +1,56 @@
 {
-  "name": "adonis-api-app",
-  "version": "4.1.0",
-  "adonis-version": "4.1.0",
-  "description": "Adonisjs boilerplate for API server with pre-configured JWT",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "node ace test",
-    "migrate": "adonis migration:run"
-  },
-  "keywords": [
-    "adonisjs",
-    "adonis-app"
-  ],
-  "author": "",
-  "license": "UNLICENSED",
+  "name": "modulo4",
+  "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "@adonisjs/ace": "^5.0.8",
-    "@adonisjs/antl": "^2.0.7",
-    "@adonisjs/auth": "^3.0.7",
-    "@adonisjs/bodyparser": "^2.0.5",
-    "@adonisjs/cors": "^1.0.7",
-    "@adonisjs/fold": "^4.0.9",
-    "@adonisjs/framework": "^5.0.9",
-    "@adonisjs/ignitor": "^2.0.8",
-    "@adonisjs/lucid": "^6.1.3",
-    "@adonisjs/mail": "^3.0.9",
-    "@adonisjs/redis": "^2.0.7",
-    "@adonisjs/validator": "^5.0.6",
-    "@sentry/node": "5.0.8",
-    "adonis-kue": "^5.0.1",
-    "moment": "^2.24.0",
-    "pg": "^7.9.0"
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
-  "autoload": {
-    "App": "./app"
+  "dependencies": {
+    "axios": "^0.18.0",
+    "prop-types": "^15.7.2",
+    "react": "16.8.3",
+    "react-native": "0.59.3",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-iphone-x-helper": "^1.2.0",
+    "react-native-swift": "^1.2.2",
+    "react-native-track-player": "^1.1.3",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^3.6.1",
+    "react-redux": "^6.0.1",
+    "reactotron-react-native": "^3.2.1",
+    "reactotron-redux": "^3.1.0",
+    "reactotron-redux-saga": "^4.2.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2",
+    "reduxsauce": "^1.0.1",
+    "seamless-immutable": "^7.1.4",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.15.3",
-    "eslint-config-standard": "^12.0.0",
+    "@babel/core": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "babel-plugin-root-import": "^6.1.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
     "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0"
-  }
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.7.1",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-dom": "^16.8.6",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFiles": [
+      "<rootDir>src/setupTest.js"
+    ]
+  },
+  "isSwift": true
 }
