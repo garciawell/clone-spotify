@@ -14,7 +14,8 @@ const App = () => (
   </Provider>
 );
 
-const codePushOptions = {
+// eslint-disable-next-line prefer-const
+let codePushOptions = {
   checkFrequency: codePush.CheckFrequency.ON_APP_RESUME,
 };
 
