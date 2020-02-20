@@ -1,6 +1,6 @@
 import './config/ReactotronConfig';
 import './config/StatusBarConfig';
-
+import codePush from 'react-native-code-push';
 import React from 'react';
 import { Provider } from 'react-redux';
 import Routes from '~/routes';
@@ -14,4 +14,8 @@ const App = () => (
   </Provider>
 );
 
-export default App;
+const codePushOptions = {
+  checkFrequency: codePush.CheckFrequency.ON_APP_RESUME,
+};
+
+export default codePush(codePushOptions)(App);
